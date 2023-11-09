@@ -31,7 +31,13 @@ public class Main {
         String name = scanner.nextLine();
 
         System.out.println("What year were you born?");
+
         int age = scanner.nextInt();
+        if (age > currentYear) {
+           return "Invalid Value";
+
+        }
+
         age = currentYear - age;
 
         return "Your name is " + name + " and you are " + age + " years old";
